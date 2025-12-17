@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #004466;
+    }
+    nav a {
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #ffcc00;
+      color: #004466;
+    }
+
+    .container {
+      display: flex;
+      margin: 20px;
+    }
+    .sidebar {
+      flex: 1;
+      padding: 20px;
+      background: #f0f0f0;
+    }
+    .main {
+      flex: 3;
+      padding: 20px;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px;
+    }
+    .feature {
+      flex: 1;
+      margin: 10px;
+      padding: 20px;
+      border-radius: 8px;
+      color: white;
+    }
+    .feature h3 {
+      margin-top: 0;
+    }
+    .feature button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background: white;
+      color: inherit;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .feature button:hover {
+      background: #ddd;
+    }
+    .box1 { background-color: #004466; }
+    .box2 { background-color: #ff6600; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="contactus.html">Contact Us</a>
+    <a href="#">Products & Services</a>
+  </nav>
+
+  <div class="container">
+    <div class="sidebar">
+      <img src="logo.png" alt="Business Logo" style="max-width:100%;">
+      <ul>
+        <li>High Quality Service</li>
+        <li>Affordable Pricing</li>
+        <li>Customer Satisfaction</li>
+      </ul>
+    </div>
+    <div class="main">
+      <h1>Welcome!</h1>
+      <p>We are dedicated to providing the best products and services to our customers. Explore our site to learn more about what we offer.</p>
+    </div>
+  </div>
+
+  <div class="features" id="specialoffers">
+    <div class="feature box1">
+      <h3>Special Offer</h3>
+      <p>Get 20% off your first purchase!</p>
+      <button>Learn More</button>
+    </div>
+    <div class="feature box2">
+      <h3>New Arrivals</h3>
+      <p>Check out our latest products and services.</p>
+      <button>Learn More</button>
+    </div>
+  </div>
+
+  
+  <button id="hidebutton" onclick="hideOffers()" style="margin:20px;">Hide Offers</button>
+
+<script>
+    function hideOffers() {
+      let x = document.getElementById("specialoffers");
+      let y = document.getElementById("hidebutton");
+
+      x.style.display = "none";
+      y.style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
