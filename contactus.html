@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e6e6e6;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #004466;
+    }
+    nav a {
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #ffcc00;
+      color: #004466;
+    }
+
+    .contact-container {
+      background: white;
+      width: 60%;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #004466;
+    }
+
+    .column h3 {
+      margin-bottom: 10px;
+      color: #004466;
+    }
+
+    .column p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="#">Products & Services</a>
+  </nav>
+
+
+  <div class="contact-container">
+    
+    <div class="column">
+      <h3>Location</h3>
+      <p><strong>Address:</strong> 123 Business Street, Suite 100</p>
+      <p><strong>Phone:</strong> (555) 123‑4567</p>
+      <p><strong>Email:</strong> info@ourbusiness.com</p>
+    </div>
+
+    <div class="column">
+      <h3>Hours of Operation</h3>
+      <p>Monday–Friday: 9am – 5pm</p>
+      <p>Saturday: 10am – 2pm</p>
+      <p>Sunday: Closed</p>
+    </div>
+
+  </div>
+  
+  <form 
+  action="https://us-central1-alhsofunctions.cloudfunctions.net/alhsoFormExample" 
+  method="POST" 
+  style="grid-column: 1 / span 2; margin-top: 20px;"
+>
+
+  <label for="name">Name:</label><br>
+  <input 
+    type="text" 
+    id="name" 
+    name="user-name" 
+    required 
+    style="width: 100%; padding: 10px; margin-bottom: 15px;"
+  >
+
+  <label for="email">Email:</label><br>
+  <input 
+    type="email" 
+    id="email" 
+    name="user-email" 
+    required 
+    style="width: 100%; padding: 10px; margin-bottom: 15px;"
+  >
+
+  <label for="message">Message:</label><br>
+  <textarea 
+    id="message" 
+    name="user-message" 
+    rows="5" 
+    required 
+    style="width: 100%; padding: 10px; margin-bottom: 15px;"
+  ></textarea>
+
+  <button 
+    type="submit" 
+    style="padding: 12px 25px; background:#004466; color:white; border:none; border-radius:5px; cursor:pointer;"
+  >
+    Send
+  </button>
+
+</form>
+
+
+</body>
+</html>
