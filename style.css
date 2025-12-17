@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #004466;
+}
+
+nav a {
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #ffcc00;
+  color: #004466;
+}
+
+.container {
+  display: flex;
+  margin: 20px;
+}
+
+.sidebar {
+  flex: 1;
+  padding: 20px;
+  background: #f0f0f0;
+}
+
+.main {
+  flex: 3;
+  padding: 20px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.feature {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+}
+
+.feature button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: white;
+  color: inherit;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.feature button:hover {
+  background: #ddd;
+}
+
+.box1 { background-color: #004466; }
+.box2 { background-color: #ff6600; }
+
+.contact-container {
+  background: white;
+  width: 60%;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.column h3 {
+  color: #004466;
+}
+
+button[type="submit"] {
+  padding: 12px 25px;
+  background:#004466;
+  color:white;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+}
